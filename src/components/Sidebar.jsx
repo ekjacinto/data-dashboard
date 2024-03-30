@@ -8,9 +8,9 @@ const Sidebar = ({ toggle, handleToggle }) => {
   return (
     <div>
       {toggle === false ? (
-        <div className="h-[95%] w-[7%] fixed left-8 top-8 overflow-y-auto bg-[#131313] rounded-2xl transition-all duration-500">
+        <div className="h-[95%] w-[8.5%] fixed left-8 top-8 overflow-y-auto bg-[#131313] rounded-2xl transition-all duration-500">
           <div className="flex flex-col text-3xl justify-center items-center mt-4 p-4 gap-8">
-            <div className="sidebar-element">
+            <div>
               <img
                 src={Hamburger}
                 alt="Hamburger Navigation Icon"
@@ -20,9 +20,9 @@ const Sidebar = ({ toggle, handleToggle }) => {
               />
             </div>
             <hr
-              className={`bg-gray-200 border-[1.7px] w-20 transition-all duration-500`}
+              className={`bg-gray-200 border-[1.7px] w-[90%] transition-all duration-500`}
             />
-            <div className="sidebar-element">
+            <div className="transition-all duration-500">
               <img
                 src={Homepage}
                 alt="Homepage Icon"
@@ -31,7 +31,7 @@ const Sidebar = ({ toggle, handleToggle }) => {
                 className={`mb-4`}
               />
             </div>
-            <div>
+            <div className="transition-all duration-500">
               <img
                 src={Search}
                 alt="Search Icon"
@@ -40,7 +40,7 @@ const Sidebar = ({ toggle, handleToggle }) => {
                 className={`mb-4`}
               />
             </div>
-            <div>
+            <div className="transition-all duration-500">
               <img
                 src={About}
                 alt="About Icon"
@@ -52,10 +52,10 @@ const Sidebar = ({ toggle, handleToggle }) => {
           </div>
         </div>
       ) : (
-        <div className="h-[95%] w-[21%] fixed left-8 top-8 overflow-y-auto bg-[#131313] rounded-2xl transition-all duration-500">
+        <div className="h-[95%] w-[22.5%] fixed left-8 top-8 overflow-y-auto bg-[#131313] rounded-2xl transition-all duration-500">
           <div className="flex flex-col text-3xl mt-4 p-4 gap-8">
             <div
-              className="flex justify-center items-center gap-4 sidebar-element"
+              className="flex justify-center items-center gap-4"
               onClick={handleToggle}
             >
               <h1 className="text-4xl font-bold">GameCharts</h1>
@@ -69,7 +69,7 @@ const Sidebar = ({ toggle, handleToggle }) => {
             <hr
               className={`bg-gray-200 border-[1.7px] w-[90%] ml-4 transition-all duration-500`}
             />
-            <div className="flex justify-start items-center gap-4 ml-4 sidebar-element">
+            <div className="flex justify-start items-center gap-4 ml-4 transition-all duration-500">
               <img
                 src={Homepage}
                 alt="Homepage Icon"
@@ -80,7 +80,7 @@ const Sidebar = ({ toggle, handleToggle }) => {
               <h1 className="text-[2rem]">Dashboard</h1>
             </div>
 
-            <div className="flex justify-start items-center gap-4 ml-4 sidebar-element">
+            <div className="flex justify-start items-center gap-4 ml-4 transition-all duration-500">
               <img
                 src={Search}
                 alt="Search Icon"
@@ -91,7 +91,7 @@ const Sidebar = ({ toggle, handleToggle }) => {
               <h1 className="text-[2rem]">Search</h1>
             </div>
 
-            <div className="flex justify-start items-center gap-4 ml-4 sidebar-element ">
+            <div className="flex justify-start items-center gap-4 ml-4 transition-all duration-500">
               <img
                 src={About}
                 alt="About Icon"
