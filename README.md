@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![datadashboard](https://github.com/ekjacinto/data-dashboard/assets/109046831/51d0cdec-0c78-4607-8fa3-b2abc455a31c)
 
 <!-- Replace this with whatever GIF tool you used! -->
 
@@ -50,7 +50,7 @@ One of the main challenges in creating this app was mapping the data from the AP
 
 ## License
 
-    Copyright [2004] [Ethan Jacinto]
+    Copyright [2024] [Ethan Jacinto]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
