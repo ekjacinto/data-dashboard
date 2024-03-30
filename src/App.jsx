@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { useEffect } from "react";
 import Sidebar from "./components/Sidebar";
-import MainDashboard from "./MainDashboard";
+import MainDashboard from "./components/MainDashboard";
 
 function App() {
   const [data, setData] = useState([]);
@@ -10,14 +10,18 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [filterCategory, setFilterCategory] = useState("");
   const [toggle, setToggle] = useState(false);
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://api.rawg.io/api/games");
+        const response = await fetch(
+          `https://api.rawg.io/api/games?key=${API_KEY}`
+        );
         const jsonData = await response.json();
-        setData(jsonData);
-        setFilteredData(jsonData);
+        setData(jsonData.results);
+        setFilteredData(jsonData.results);
+        console.log(jsonData.results);
       } catch (error) {
         console.error("Error fetching data:", error);
       }

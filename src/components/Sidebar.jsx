@@ -52,13 +52,13 @@ const Sidebar = ({ toggle, handleToggle }) => {
           </div>
         </div>
       ) : (
-        <div className="h-[95%] w-[20%] fixed left-8 top-8 overflow-y-auto bg-[#131313] rounded-2xl transition-all duration-500">
+        <div className="h-[95%] w-[21%] fixed left-8 top-8 overflow-y-auto bg-[#131313] rounded-2xl transition-all duration-500">
           <div className="flex flex-col text-3xl mt-4 p-4 gap-8">
             <div
-              className="flex justify-center items-center gap-12 sidebar-element"
+              className="flex justify-center items-center gap-4 sidebar-element"
               onClick={handleToggle}
             >
-              <h1 className="text-4xl font-bold">MyApp</h1>
+              <h1 className="text-4xl font-bold">GameCharts</h1>
               <img
                 src={Hamburger}
                 alt="Hamburger Navigation Icon"
@@ -67,7 +67,7 @@ const Sidebar = ({ toggle, handleToggle }) => {
               />
             </div>
             <hr
-              className={`bg-gray-200 border-[1.7px] w-[15rem] ml-4 transition-all duration-500`}
+              className={`bg-gray-200 border-[1.7px] w-[90%] ml-4 transition-all duration-500`}
             />
             <div className="flex justify-start items-center gap-4 ml-4 sidebar-element">
               <img
